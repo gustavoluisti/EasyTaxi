@@ -8,15 +8,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.javacodegeeks.android.loginapp.MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="Authentication Required"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tituloReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Registro"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -27,37 +32,63 @@
         android:layout_marginTop="25dp"
         android:orientation="vertical" >
 
-        <LinearLayout
+        <EditText
+            android:id="@+id/editText4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Telefono de Contacto"
+            android:inputType="phone" >
 
-            <EditText
-                android:id="@+id/editText4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Telefono de Contacto"
-                android:inputType="phone" />
-        </LinearLayout>
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Cuenta de Facebook" />
+
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/editText1"
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/linearLayout1"
-        android:layout_below="@+id/linearLayout1"
-        android:hint="Cuenta de Facebook" >
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="86dp"
+        android:text="Registrar" />
 
-        <requestFocus />
-    </EditText>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Ya tienes cuenta? Login"
+        android:textColor="#0b84aa"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/radioButton1"
+        android:text="No" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/radioButton1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="23dp"
         android:text="Cuenta de Whatsapp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -65,26 +96,8 @@
         android:id="@+id/radioButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignLeft="@+id/radioButton2"
         android:layout_below="@+id/textView2"
         android:text="Si" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/radioButton1"
-        android:layout_below="@+id/radioButton1"
-        android:text="No" />
-
-    <Button
-        android:id="@+id/button1"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/editText1"
-        android:layout_below="@+id/radioButton2"
-        android:layout_marginTop="33dp"
-        android:text="Registrar" />
 
 </RelativeLayout>
