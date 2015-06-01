@@ -5,7 +5,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Registro {
+public class Registro extends Activity {
 
 
     private EditText inputFullName;
@@ -27,7 +27,11 @@ public class Registro {
       //  inputPerCon = (EditText) findViewById(R.id.personaContacto);
       //  btnRegister = (Button) findViewById(R.id.next);
 
-      
+    
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.registro); 
+    }
 
 }
  
