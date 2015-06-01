@@ -5,7 +5,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Registro extends Activity {
+public class Registro {
 
 
     private EditText inputFullName;
@@ -18,20 +18,8 @@ public class Registro extends Activity {
 	private TextView lblGotoLogin;
     private Button btnRegister;
 
-   
-        //inputFullName = (EditText) findViewById(R.id.nombre);
-       // inputDir = (EditText) findViewById(R.id.direccion);
-       // inputTelDom = (EditText) findViewById(R.id.telDomicilio);
-       // inputCelular = (EditText) findViewById(R.id.celular);
-       // inputCorreo = (EditText) findViewById(R.id.correo);
-      //  inputPerCon = (EditText) findViewById(R.id.personaContacto);
-      //  btnRegister = (Button) findViewById(R.id.next);
-
     
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.registro); 
-    }
+   
 
 }
  

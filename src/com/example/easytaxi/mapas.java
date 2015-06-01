@@ -14,8 +14,6 @@ public class mapas extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mapas);
         
-       
-        
     }
 
 
