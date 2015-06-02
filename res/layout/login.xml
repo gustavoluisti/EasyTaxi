@@ -6,8 +6,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000"
     tools:context=".MainActivity" >
 
+    
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
@@ -22,6 +24,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Login"
+            android:textColor="#E08A1E"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
     </LinearLayout>
@@ -40,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Usuario"
+            android:textColor="#fff"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
 
@@ -54,7 +58,9 @@
         <EditText
             android:id="@+id/tituloLogin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content" 
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dip">
 
             <requestFocus />
         </EditText>
@@ -74,6 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Password"
+            android:textColor="#fff"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
 
@@ -89,7 +96,10 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword" />
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textPassword" 
+            android:padding="5dip"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -106,6 +116,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login" 
+            android:background="#E08A1E"
             android:onClick="btnlogin"/>
     </LinearLayout>
 

@@ -20,7 +20,6 @@
             android:gravity="center"
             android:text="Registro"
             android:textAppearance="?android:attr/textAppearanceLarge" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -38,10 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Telefono de Contacto"
-            android:inputType="phone" >
-
-            <requestFocus />
-        </EditText>
+            android:inputType="phone" />
 
         <EditText
             android:id="@+id/editText1"
@@ -49,7 +45,35 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Cuenta de Facebook" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="Ya tienes cuenta? Login"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#0b84aa" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:text="No" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Si" />
     </LinearLayout>
 
     <Button
@@ -57,47 +81,15 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout1"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="86dp"
         android:text="Registrar" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignTop="@+id/button1"
-        android:layout_marginTop="60dp"
-        android:gravity="center"
-        android:text="Ya tienes cuenta? Login"
-        android:textColor="#0b84aa"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/radioButton1"
-        android:text="No" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/radioButton1"
-        android:layout_below="@+id/linearLayout1"
-        android:layout_marginTop="23dp"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/button1"
         android:text="Cuenta de Whatsapp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <RadioButton
-        android:id="@+id/radioButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/radioButton2"
-        android:layout_below="@+id/textView2"
-        android:text="Si" />
 
 </RelativeLayout>
